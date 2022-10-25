@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+     <link rel="stylesheet" href="styles.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <title>Home</title>
+    <style>
+      .nav-tabs{
+        background-color: rgb(7, 47, 47);
+      }
+    </style>
+</head>
+<body>
+  <!--Navbar-->
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark"> <!-- classic navbar, navbar expands until large number of pixels, dark background. -->
+  <div class="container">
+<a href="#" class="navbar-brand text-success"> <!--(brand)makes the font size bigger and bolder.-->
+  Home
+</a>
+     <div class="collapse navbar-collapse my-2">
+       <ul class="navbar-nav">
+        <li class="nav-item">  <!--for each item-->
+         <a href="About.html" class="nav-link">About me</a> <!--for each link-->
+        </li>
+        <li class="nav-item">
+         <a href="Contact.html" class="nav-link">Contact me!</a>
+        </li>
+        <li class="nav-item">
+         <a href="#" class="nav-link">What you'll learn!</a>
+        </li>
+       </ul>
+     </div>
+  </div>
+</nav>
+ 
+  <!--Showcase-->
+  <section class="bg-light text-dark p-4 text-center text-sm-start"><!--background, text color, padding all round,text alignment,on smaller screens it will align to the start-->
+<div class="container-fluid">
+  <div class="d-sm-flex align-items-center justify-content-between">  <!--flexbox, will put the stuff together, sm will give it the small breakpoint. align items center will align them at the center of the box.-->
+    <h1 class="h1 mx-2"><!--mx means margin on the x axis, it goes from 1-5 with 5 the most margin. my would be for the y axis(vertical)-->
+      This is the home of <span class="text-primary">Nicholas Pennington!</span><!--changes the color inside the span-->
+    </h1>
+    <p class="lead mx-1"><!--makes the text slightly bigger.-->
+      Why invest in NIcholas? Simple, he has been a professional football player for 6 years and at the same time has dedicated lots of his time to hobbies and studying. Learn more by browsing the website.
+    </p>
+    <!--button with blue color and large in size.-->
+  <!--img fluid class will make the image stay in the box, w-50 will resize it by 50% (smaller)-->
+  <img class="img-fluid" src="https://th.bing.com/th/id/OIP.8kXyux8W8YCJs3WETenlVAHaEK?pid=ImgDet&rs=1"alt="Nicholas Pennington">
+  <button class="btn btn-success btn-md mx-1">Send me a message and show your interest.</button> 
+</div>
+</div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<!--new section, box for submitting email for more information.-->
+  <section class="bg-success text-light p-3">
+    <div class="container">
+      <div class="d-md-flex align-items-center justify-content-between"><!--flexbox will kick in only at the medium breakpoint.-->
+        <h4 class="h4 m-2">Submit your email to receive more information!</h4>
+          <div class="input-group mb-3">
+           <input type="text" class="form-control" placeholder="Your email" aria-label="Your email" aria-describedby="button-addon2"><!--input group from bootstrap website, form page.-->
+            <button class="btn btn-dark" type="button" id="button-addon2">Submit your email</button>
+</div>
+      </div>
+    </div>
+  </section>
+  <!--The grid system is used in this section.-->
+  <section id="cards" class="p-3"><!--id is used so that users can navigate here directly.-->
+    <div class="container">
+      <div class="row text-center"><!--creates a row in which up to 12 columns can go.-->
+        <!--The cards code is taken directly from the bootstrap website and modified slightly.-->
+        <div class="col-md"> <!--first card(football)-->
+          <div class="card bg-dark text-light" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Football player</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Main occupation</h6>
+              <p class="card-text">Nicholas Pennington is a professional football player, he currently plays for the Wellington Phoenix.</p>
+              <a href="https://www.wellingtonphoenix.com" class="card-link">Wellington Phoenix</a>
+            </div>
+          </div>
+        </div><!--col-md means that the columns will persist only in medium to big screens.-->
+        <div class="col-md"><!--second card university studies.-->
+          <div class="card bg-dark text-light" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">University studies</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Second "job"</h6>
+              <p class="card-text">Nicholas also studies natural sciences at the Open University, click the link to see his progress.</p>
+              <a href="https://msds.open.ac.uk/students/academicrecord.aspx?q=Q64&o=1" class="card-link">Nicholas' studies.</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="card bg-dark text-light" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Software development</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Current novice</h6>
+              <p class="card-text">Nicholas has started studying software development and plans to become a pro very quickly, follow the link to his first website. </p>
+              <a href="#" class="card-link">Nicholas' first website.</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="p-5 bg-dark text-white text-center">
+<div class="container">
+  <p class="lead">Copyright &copy; 2022 NicholasPennington Website</p>
+</div>
+  </footer>
+</body>
+</html>
