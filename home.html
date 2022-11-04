@@ -34,34 +34,33 @@
       </div>
     </div>
   </nav>
-
+ <!--Navbar End-->
   <!--Showcase-->
   <div class="row">
     <div class="col-lg">
-  <section class="bg1 text-dark p-4 text-center text-sm-start"><!--background, text color, padding all round,text alignment,on smaller screens it will align to the start-->
+  <section class="bg1 text-dark p-4 text-center text-sm-start">
 <div class="container-fluid">
-  <div class="d-lg-flex align-items-center justify-content-between">  <!--flexbox, will put the stuff together, sm will give it the small breakpoint. align items center will align them at the center of the box.-->
-    <h1 class="h1 mx-2"><!--mx means margin on the x axis, it goes from 1-5 with 5 the most margin. my would be for the y axis(vertical)-->
-      This is the home of <span class="text-info">Nicholas Pennington!</span><!--changes the color inside the span-->
+  <div class="d-lg-flex align-items-center justify-content-between">  
+    <h1 class="h1 mx-2">
+      This is the home of <span class="text-info">Nicholas Pennington!</span>
     </h1>
-    <p class="lead mx-1"><!--makes the text slightly bigger.-->
+    <p class="lead mx-1">
       Hi! I'm Nicholas Pennington, I am a professional football player but it doesn't end there! I study natural sciences at university and I'm currently also completing a full-stack developer course.
     </p>
-    <!--button with blue color and large in size.-->
-  <!--img fluid class will make the image stay in the box, w-50 will resize it by 50% (smaller)-->
-  <img class="img-fluid m-2" src="homepage.jpg"alt="Nicholas Pennington" style="height: 350px;" width="500px;">
+     <img class="img-fluid m-2" src="homepage.jpg"alt="Nicholas Pennington" style="height: 350px;" width="500px;">
 </div>
 </div>
   </section>
   </div>
   </div>
-<!--new section, box for submitting email for more information.-->
+   <!--Showcase End-->
+    <!--Email submission-->
 <div class="row">
   <div class="col-lg">
   <section class="bg-info text-light p-3">
     <div class="container">
-      <div class="d-md-flex align-items-center justify-content-between"><!--flexbox will kick in only at the medium breakpoint.-->
-        <h4 class="h4 m-2">Submit your email to receive more information!</h4>
+      <div class="d-md-flex align-items-center justify-content-between">
+        <h4 class="h4 m-2">Submit your email to receive more information, if you want to send me a message instead go to the <a href="Contact.html">contact</a> page. </h4>
           <div class="input-group mb-3">
            <input type="text" class="form-control" placeholder="Your email" aria-label="Your email" aria-describedby="button-addon2"><!--input group from bootstrap website, form page.-->
             <button class="btn btn-dark" type="button" id="button-addon2">Submit your email</button>
@@ -71,14 +70,13 @@
   </section>
   </div>
   </div>
-  <!--The grid system is used in this section.-->
+<!--cards-->
   <div class="row">
     <div class="col-lg">
-  <section id="cards" class="p-3 bg1"><!--id is used so that users can navigate here directly.-->
+  <section id="cards" class="p-3 bg1">
     <div class="container">
-      <div class="row text-center"><!--creates a row in which up to 12 columns can go.-->
-        <!--The cards code is taken directly from the bootstrap website and modified slightly.-->
-        <div class="col-lg"> <!--first card(football)-->
+      <div class="row text-center">
+        <div class="col-lg"> 
           <div class="card bg-dark text-light p-2 m-2" style="width: 18rem;">
             <div class="card-body">
               <h5 class="card-title">Football player</h5>
@@ -87,8 +85,8 @@
               <a href="https://en.wikipedia.org/wiki/Nicholas_Pennington" class="card-link">To know more about my footballing career</a>
             </div>
           </div>
-        </div><!--col-md means that the columns will persist only in medium to big screens.-->
-        <div class="col-lg"><!--second card university studies.-->
+        </div>
+        <div class="col-lg">
           <div class="card bg-dark text-light p-2 m-2" style="width: 18rem;">
             <div class="card-body">
               <h5 class="card-title">University studies</h5>
